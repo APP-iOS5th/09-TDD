@@ -7,8 +7,11 @@
 
 import Foundation
 
-struct MenuItem {}
+struct MenuItem {
+    let category: String
+}
 
 func groupMenuByCategory(_ menu: [MenuItem]) -> [MenuSection] {
-    return []
+    if menu.isEmpty { return [] }    
+    return [MenuSection()]
 }
