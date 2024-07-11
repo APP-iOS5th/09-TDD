@@ -13,7 +13,6 @@ struct AlbertosApp: App {
         WindowGroup {
             NavigationStack {
                 MenuList(sections: groupMenuByCategory(menu))
-                    .navigationTitle("Alberto's 🇮🇹")
             }
         }
     }
