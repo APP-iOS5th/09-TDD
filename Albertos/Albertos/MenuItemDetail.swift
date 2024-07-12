@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct MenuItemDetail: View {
+    @ObservedObject var viewModel: ViewModel
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack(alignment: .leading) {
+            Text(viewModel.name)
+                .fontWeight(.bold)
+            
+            if let spicy = viewModel.spicy {
+                Text(spicy)
+                    .font(Font.body.italic())
+            }
+            
+            Text(viewModel.price)
+            
+            Button(viewModel.addOrRemoveFromOrderButtonText) {
+                viewModel.addOrREmoveFromOrder()
+            }
+        }
     }
-}
-
-#Preview {
-    MenuItemDetail()
 }
