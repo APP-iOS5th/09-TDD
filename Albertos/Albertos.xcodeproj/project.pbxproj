@@ -26,6 +26,9 @@
 		3707A75F2C40C1DD006AC7C2 /* NetworkFetchingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A75E2C40C1DD006AC7C2 /* NetworkFetchingStub.swift */; };
 		3707A7612C40C8E2006AC7C2 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7602C40C8E2006AC7C2 /* Order.swift */; };
 		3707A7632C40CA7E006AC7C2 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7622C40CA7E006AC7C2 /* OrderController.swift */; };
+		3707A7652C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7642C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift */; };
+		3707A7672C40CF63006AC7C2 /* MenuItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A7662C40CF63006AC7C2 /* MenuItemDetailViewModel.swift */; };
+		3707A76B2C40E410006AC7C2 /* MenuItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707A76A2C40E410006AC7C2 /* MenuItemDetail.swift */; };
 		372AB7642C3F5F79009C7758 /* Array+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7632C3F5F79009C7758 /* Array+Safe.swift */; };
 		372AB7662C3F5F9B009C7758 /* MenuItem+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7652C3F5F9B009C7758 /* MenuItem+Fixture.swift */; };
 		372AB7682C3F6829009C7758 /* MenuSection+Fixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372AB7672C3F6829009C7758 /* MenuSection+Fixture.swift */; };
@@ -78,6 +81,9 @@
 		3707A75E2C40C1DD006AC7C2 /* NetworkFetchingStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFetchingStub.swift; sourceTree = "<group>"; };
 		3707A7602C40C8E2006AC7C2 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		3707A7622C40CA7E006AC7C2 /* OrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		3707A7642C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewModelTests.swift; sourceTree = "<group>"; };
+		3707A7662C40CF63006AC7C2 /* MenuItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetailViewModel.swift; sourceTree = "<group>"; };
+		3707A76A2C40E410006AC7C2 /* MenuItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemDetail.swift; sourceTree = "<group>"; };
 		372AB7632C3F5F79009C7758 /* Array+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Safe.swift"; sourceTree = "<group>"; };
 		372AB7652C3F5F9B009C7758 /* MenuItem+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuItem+Fixture.swift"; sourceTree = "<group>"; };
 		372AB7672C3F6829009C7758 /* MenuSection+Fixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MenuSection+Fixture.swift"; sourceTree = "<group>"; };
@@ -143,6 +149,8 @@
 				3707A7582C40BBC0006AC7C2 /* MenuFetcher.swift */,
 				3707A75A2C40C00D006AC7C2 /* NetworkFetching.swift */,
 				3707A75C2C40C07B006AC7C2 /* URLSession+NetworkFetching.swift */,
+				3707A7662C40CF63006AC7C2 /* MenuItemDetailViewModel.swift */,
+				3707A76A2C40E410006AC7C2 /* MenuItemDetail.swift */,
 				3705AE0F2C3E4062006FB385 /* MenuList.swift */,
 				372AB7732C3F77E7009C7758 /* MenuList.ViewModel.swift */,
 				372AB76B2C3F6CC4009C7758 /* MenuRow.swift */,
@@ -180,6 +188,7 @@
 				3707A7542C40B2F1006AC7C2 /* XCTestCase+JSON.swift */,
 				3707A7562C40BB40006AC7C2 /* MenuFetcherTests.swift */,
 				3707A75E2C40C1DD006AC7C2 /* NetworkFetchingStub.swift */,
+				3707A7642C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift */,
 			);
 			path = AlbertosTests;
 			sourceTree = "<group>";
@@ -324,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3707A76B2C40E410006AC7C2 /* MenuItemDetail.swift in Sources */,
 				3707A7632C40CA7E006AC7C2 /* OrderController.swift in Sources */,
 				3707A7592C40BBC0006AC7C2 /* MenuFetcher.swift in Sources */,
 				372AB7742C3F77E7009C7758 /* MenuList.ViewModel.swift in Sources */,
@@ -337,6 +347,7 @@
 				3705AE0E2C3E4062006FB385 /* AlbertosApp.swift in Sources */,
 				3707A7612C40C8E2006AC7C2 /* Order.swift in Sources */,
 				372AB76C2C3F6CC4009C7758 /* MenuRow.swift in Sources */,
+				3707A7672C40CF63006AC7C2 /* MenuItemDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +358,7 @@
 				3707A7572C40BB40006AC7C2 /* MenuFetcherTests.swift in Sources */,
 				3707A7552C40B2F1006AC7C2 /* XCTestCase+JSON.swift in Sources */,
 				3707A75F2C40C1DD006AC7C2 /* NetworkFetchingStub.swift in Sources */,
+				3707A7652C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift in Sources */,
 				372AB7682C3F6829009C7758 /* MenuSection+Fixture.swift in Sources */,
 				372AB7722C3F757D009C7758 /* MenuListViewModelTests.swift in Sources */,
 				372AB7642C3F5F79009C7758 /* Array+Safe.swift in Sources */,
