@@ -11,6 +11,7 @@ struct MenuItem: Identifiable, Equatable, Codable {
     let category: String
     let name: String
     let spicy: Bool
+    let price: Double
     
     var id: String { name }
 }
