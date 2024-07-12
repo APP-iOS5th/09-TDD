@@ -61,6 +61,8 @@
 		3754DB222C40FB5A0076FAF6 /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB212C40FB5A0076FAF6 /* Color+Custom.swift */; };
 		3754DB242C40FEF00076FAF6 /* HippoPaymentsProcessor+PaymentProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB232C40FEF00076FAF6 /* HippoPaymentsProcessor+PaymentProcessing.swift */; };
 		3754DB262C40FF450076FAF6 /* Order+HippoPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB252C40FF450076FAF6 /* Order+HippoPayments.swift */; };
+		3754DB292C41025E0076FAF6 /* PaymentProcessingSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */; };
+		3754DB2B2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,6 +167,8 @@
 		3754DB212C40FB5A0076FAF6 /* Color+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 		3754DB232C40FEF00076FAF6 /* HippoPaymentsProcessor+PaymentProcessing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HippoPaymentsProcessor+PaymentProcessing.swift"; sourceTree = "<group>"; };
 		3754DB252C40FF450076FAF6 /* Order+HippoPayments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+HippoPayments.swift"; sourceTree = "<group>"; };
+		3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProcessingSpy.swift; sourceTree = "<group>"; };
+		3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +265,7 @@
 			children = (
 				3754DAD32C40F4D00076FAF6 /* Commons */,
 				3754DAD12C40F4A50076FAF6 /* Stubs */,
+				3754DB272C4102340076FAF6 /* Spy */,
 				3754DAD22C40F4B30076FAF6 /* Fixtures */,
 				3754DAD42C40F4E80076FAF6 /* Resources */,
 				3754DAD82C40F5300076FAF6 /* NetworksTests */,
@@ -382,6 +387,7 @@
 				372AB76D2C3F6D30009C7758 /* MenuRowViewModelTests.swift */,
 				372AB7712C3F757D009C7758 /* MenuListViewModelTests.swift */,
 				3707A7642C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift */,
+				3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */,
 			);
 			path = ViewModelsTests;
 			sourceTree = "<group>";
@@ -459,6 +465,14 @@
 				3754DAE82C40F8660076FAF6 /* UIViewController+Presentation.swift */,
 			);
 			path = HippoPayments;
+			sourceTree = "<group>";
+		};
+		3754DB272C4102340076FAF6 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */,
+			);
+			path = Spy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -711,9 +725,11 @@
 				372AB7722C3F757D009C7758 /* MenuListViewModelTests.swift in Sources */,
 				372AB7642C3F5F79009C7758 /* Array+Safe.swift in Sources */,
 				372AB7662C3F5F9B009C7758 /* MenuItem+Fixture.swift in Sources */,
+				3754DB2B2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift in Sources */,
 				3754DACA2C40F1120076FAF6 /* OrderControllerTests.swift in Sources */,
 				372AB76E2C3F6D30009C7758 /* MenuRowViewModelTests.swift in Sources */,
 				3754DAC82C40F1070076FAF6 /* OrderTest.swift in Sources */,
+				3754DB292C41025E0076FAF6 /* PaymentProcessingSpy.swift in Sources */,
 				3707A7512C40AC48006AC7C2 /* MenuItemTests.swift in Sources */,
 				3705AE1F2C3E4064006FB385 /* MenuGroupingTests.swift in Sources */,
 				372AB77A2C3FA8D4009C7758 /* MenuFetchingStub.swift in Sources */,
