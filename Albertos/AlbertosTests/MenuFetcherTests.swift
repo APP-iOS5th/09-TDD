@@ -21,6 +21,7 @@ final class MenuFetcherTests: XCTestCase {
             .sink(receiveCompletion: { _ in }, receiveValue: {
                 items in
                 // TODO: items 값이 올바른지 테스트
+                
                 expectation.fulfill()
             })
             .store(in: &cancellables)
