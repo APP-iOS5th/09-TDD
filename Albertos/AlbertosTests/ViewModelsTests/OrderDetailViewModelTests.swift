@@ -20,9 +20,35 @@ final class OrderDetailViewModelTests: XCTestCase {
         let paymentProcessingSpy = PaymentProcessingSpy()
         let viewModel = OrderDetail.ViewModel(
             orderController: orderController,
-            paymentProcessor: paymentProcessingSpy)
+            paymentProcessor: paymentProcessingSpy, onAlertDismiss: {})
         viewModel.checkout()
         XCTAssertEqual(paymentProcessingSpy.receivedOrder, orderController.order)
+    }
+
+    func testWhenPaymentFailsUpdatesPropertyToShowErrorAlertThatCallsDismissCallback() {
+        var called = false
+        let viewModel = OrderDetail.ViewModel(
+            orderController: OrderController(),
+            paymentProcessor: PaymentProcessingStub(returning: .failure(TestError(id: 123))),
+            onAlertDismiss: { called = true }
+        )
+
+        let predicate = NSPredicate { _, _ in viewModel.alertToShow != nil }
+        let expectation = XCTNSPredicateExpectation(predicate: predicate, object: .none)
+
+        viewModel.checkout()
+
+        wait(for: [expectation], timeout: timeoutForPredicateExpectations)
+
+        XCTAssertEqual(viewModel.alertToShow?.title, "")
+        XCTAssertEqual(
+            viewModel.alertToShow?.message,
+            "There's been an error with your order. Please contact a waiter."
+        )
+        XCTAssertEqual(viewModel.alertToShow?.buttonText, "Ok")
+
+        viewModel.alertToShow?.buttonAction?()
+        XCTAssertTrue(called)
     }
 
 }

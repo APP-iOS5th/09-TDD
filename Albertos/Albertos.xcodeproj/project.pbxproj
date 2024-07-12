@@ -64,6 +64,8 @@
 		3754DB292C41025E0076FAF6 /* PaymentProcessingSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */; };
 		3754DB2B2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */; };
 		3754DB2D2C4106CE0076FAF6 /* Alert.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2C2C4106CD0076FAF6 /* Alert.ViewModel.swift */; };
+		3754DB2F2C41085D0076FAF6 /* PaymentProcessingStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2E2C41085D0076FAF6 /* PaymentProcessingStub.swift */; };
+		3754DB312C4109160076FAF6 /* XCTestCase+Timeouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB302C4109160076FAF6 /* XCTestCase+Timeouts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -171,6 +173,8 @@
 		3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProcessingSpy.swift; sourceTree = "<group>"; };
 		3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModelTests.swift; sourceTree = "<group>"; };
 		3754DB2C2C4106CD0076FAF6 /* Alert.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.ViewModel.swift; sourceTree = "<group>"; };
+		3754DB2E2C41085D0076FAF6 /* PaymentProcessingStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentProcessingStub.swift; sourceTree = "<group>"; };
+		3754DB302C4109160076FAF6 /* XCTestCase+Timeouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Timeouts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +357,7 @@
 			children = (
 				372AB7792C3FA8D4009C7758 /* MenuFetchingStub.swift */,
 				3707A75E2C40C1DD006AC7C2 /* NetworkFetchingStub.swift */,
+				3754DB2E2C41085D0076FAF6 /* PaymentProcessingStub.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 			children = (
 				372AB7632C3F5F79009C7758 /* Array+Safe.swift */,
 				3707A7542C40B2F1006AC7C2 /* XCTestCase+JSON.swift */,
+				3754DB302C4109160076FAF6 /* XCTestCase+Timeouts.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -721,9 +727,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3754DB312C4109160076FAF6 /* XCTestCase+Timeouts.swift in Sources */,
 				3707A7572C40BB40006AC7C2 /* MenuFetcherTests.swift in Sources */,
 				3707A7552C40B2F1006AC7C2 /* XCTestCase+JSON.swift in Sources */,
 				3707A75F2C40C1DD006AC7C2 /* NetworkFetchingStub.swift in Sources */,
+				3754DB2F2C41085D0076FAF6 /* PaymentProcessingStub.swift in Sources */,
 				3707A7652C40CBB9006AC7C2 /* MenuItemDetailViewModelTests.swift in Sources */,
 				372AB7682C3F6829009C7758 /* MenuSection+Fixture.swift in Sources */,
 				372AB7722C3F757D009C7758 /* MenuListViewModelTests.swift in Sources */,
