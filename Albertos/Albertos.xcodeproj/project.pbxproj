@@ -63,6 +63,7 @@
 		3754DB262C40FF450076FAF6 /* Order+HippoPayments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB252C40FF450076FAF6 /* Order+HippoPayments.swift */; };
 		3754DB292C41025E0076FAF6 /* PaymentProcessingSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */; };
 		3754DB2B2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */; };
+		3754DB2D2C4106CE0076FAF6 /* Alert.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3754DB2C2C4106CD0076FAF6 /* Alert.ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +170,7 @@
 		3754DB252C40FF450076FAF6 /* Order+HippoPayments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Order+HippoPayments.swift"; sourceTree = "<group>"; };
 		3754DB282C41025E0076FAF6 /* PaymentProcessingSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProcessingSpy.swift; sourceTree = "<group>"; };
 		3754DB2A2C4102EF0076FAF6 /* OrderDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailViewModelTests.swift; sourceTree = "<group>"; };
+		3754DB2C2C4106CD0076FAF6 /* Alert.ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +423,7 @@
 		3754DAD92C40F7900076FAF6 /* OrderDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				3754DB2C2C4106CD0076FAF6 /* Alert.ViewModel.swift */,
 				3754DB1E2C40FAE20076FAF6 /* OrderDetail.swift */,
 				3754DB1D2C40FAE20076FAF6 /* OrderDetail.ViewModel.swift */,
 			);
@@ -698,6 +701,7 @@
 				3754DAF62C40F9D30076FAF6 /* PaymentProcessing.swift in Sources */,
 				3705AE382C3E42CE006FB385 /* MenuItem.swift in Sources */,
 				3754DADE2C40F7E40076FAF6 /* OrderButton.swift in Sources */,
+				3754DB2D2C4106CE0076FAF6 /* Alert.ViewModel.swift in Sources */,
 				372AB7762C3F9316009C7758 /* MenuFetching.swift in Sources */,
 				3707A75B2C40C00D006AC7C2 /* NetworkFetching.swift in Sources */,
 				3754DADD2C40F7E40076FAF6 /* OrderButton.ViewModel.swift in Sources */,
