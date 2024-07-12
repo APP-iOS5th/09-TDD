@@ -4,6 +4,7 @@
 //
 //  Created by Jungman Bae on 7/11/24.
 //
+import Foundation
 import Combine
 
 extension MenuList {
@@ -16,6 +17,7 @@ extension MenuList {
                 menuFetching
                     .fetchMenu()
                     .map(menuGrouping)
+                    .receive(on: DispatchQueue.main)
                     .sink(
                         receiveCompletion: { [weak self] completion in
                             guard case .failure(let error) = completion else { return }
